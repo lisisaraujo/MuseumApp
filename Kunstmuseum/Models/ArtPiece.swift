@@ -26,6 +26,7 @@ struct ArtPiece: Codable, Identifiable, Equatable {
     var period: String
     var author: String
     var country: String
+
     
     enum CodingKeys: String, CodingKey {
         case id = "objectID"

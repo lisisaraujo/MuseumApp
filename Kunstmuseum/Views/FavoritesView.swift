@@ -1,54 +1,22 @@
 //
-//  ArtPiecesView.swift
+//  FavoritesView.swift
 //  Kunstmuseum
 //
-//  Created by Lisis Ruschel on 30.09.24.
+//  Created by Lisis Ruschel on 01.10.24.
 //
-
 
 import SwiftUI
 
-struct ArtPiecesView: View {
-    
-    
-    @State private var searchTerm: String = ""
-    
-    @EnvironmentObject private var artViewModel: ArtViewModel
-    
+struct FavoritesView: View {
     @EnvironmentObject
     private var favoritesViewModel: FavoritesViewModel
-    
+
+
     var body: some View {
         NavigationStack {
             VStack(spacing: 16) {
-                // seearch
-                TextField("Search for art pieces", text: $searchTerm)
-                    .textFieldStyle(PlainTextFieldStyle())
-                    .padding()
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal)
                 
-                Button(action: {
-                    Task {
-                        do {
-                            _ = try await artViewModel.getListOfArtPieces(searchTerm: searchTerm)
-                        } catch {
-                            print("Error fetching art pieces: \(error.localizedDescription)")
-                        }
-                    }
-                }) {
-                    Text("Search")
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                .padding(.horizontal)
-                
-                List(artViewModel.artPieces) { artPiece in
+                List(favoritesViewModel.favArtPieces) { artPiece in
                     NavigationLink(destination: ArtPieceDetailView(artPiece: artPiece)) {
                         ArtPieceListItemView(imageURL: artPiece.primaryImage, title: artPiece.title, author: artPiece.author)
                     }
@@ -74,7 +42,8 @@ struct ArtPiecesView: View {
                             .tint(.pink)
                         }
                     }
-                }            }
+                }
+            }
             .navigationTitle("Art Pieces")
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -82,9 +51,6 @@ struct ArtPiecesView: View {
 }
 
 #Preview {
-
-    ArtPiecesView()
+    FavoritesView()
         .environmentObject(FavoritesViewModel())
-        .environmentObject(ArtViewModel(repository: ArtMockRepository()))
-    
 }

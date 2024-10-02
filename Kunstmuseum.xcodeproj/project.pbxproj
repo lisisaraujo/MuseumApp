@@ -11,7 +11,13 @@
 		A742B3EC2CAABE48001D6660 /* ArtViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3EB2CAABE48001D6660 /* ArtViewModel.swift */; };
 		A742B3EE2CAAC25E001D6660 /* ArtPiecesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3ED2CAAC25E001D6660 /* ArtPiecesView.swift */; };
 		A742B3F02CAAC686001D6660 /* ArtPieceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3EF2CAAC686001D6660 /* ArtPieceDetailView.swift */; };
-		A742B3F42CAADFD5001D6660 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3F32CAADFD5001D6660 /* Repository.swift */; };
+		A742B3F42CAADFD5001D6660 /* ArtRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3F32CAADFD5001D6660 /* ArtRemoteRepository.swift */; };
+		A742B3FC2CAC050A001D6660 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3FB2CAC050A001D6660 /* FavoritesViewModel.swift */; };
+		A742B3FE2CAC09B1001D6660 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3FD2CAC09B1001D6660 /* FavoritesView.swift */; };
+		A742B4002CAD3029001D6660 /* ArtPieceListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B3FF2CAD3029001D6660 /* ArtPieceListItemView.swift */; };
+		A742B4022CAD58FF001D6660 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B4012CAD58FF001D6660 /* Utils.swift */; };
+		A742B4042CAD6063001D6660 /* ArtRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B4032CAD6063001D6660 /* ArtRepository.swift */; };
+		A742B4062CAD7341001D6660 /* ArtMockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A742B4052CAD7341001D6660 /* ArtMockRepository.swift */; };
 		CE75F2712C8B1501001AD0A3 /* KunstmuseumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75F2702C8B1501001AD0A3 /* KunstmuseumApp.swift */; };
 		CE75F2732C8B1501001AD0A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE75F2722C8B1501001AD0A3 /* ContentView.swift */; };
 		CE75F2752C8B1502001AD0A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE75F2742C8B1502001AD0A3 /* Assets.xcassets */; };
@@ -23,7 +29,13 @@
 		A742B3EB2CAABE48001D6660 /* ArtViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtViewModel.swift; sourceTree = "<group>"; };
 		A742B3ED2CAAC25E001D6660 /* ArtPiecesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtPiecesView.swift; sourceTree = "<group>"; };
 		A742B3EF2CAAC686001D6660 /* ArtPieceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtPieceDetailView.swift; sourceTree = "<group>"; };
-		A742B3F32CAADFD5001D6660 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A742B3F32CAADFD5001D6660 /* ArtRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtRemoteRepository.swift; sourceTree = "<group>"; };
+		A742B3FB2CAC050A001D6660 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		A742B3FD2CAC09B1001D6660 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		A742B3FF2CAD3029001D6660 /* ArtPieceListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtPieceListItemView.swift; sourceTree = "<group>"; };
+		A742B4012CAD58FF001D6660 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A742B4032CAD6063001D6660 /* ArtRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtRepository.swift; sourceTree = "<group>"; };
+		A742B4052CAD7341001D6660 /* ArtMockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtMockRepository.swift; sourceTree = "<group>"; };
 		CE75F26D2C8B1501001AD0A3 /* Kunstmuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kunstmuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE75F2702C8B1501001AD0A3 /* KunstmuseumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KunstmuseumApp.swift; sourceTree = "<group>"; };
 		CE75F2722C8B1501001AD0A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				A742B3EB2CAABE48001D6660 /* ArtViewModel.swift */,
+				A742B3FB2CAC050A001D6660 /* FavoritesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -63,6 +76,8 @@
 			children = (
 				A742B3ED2CAAC25E001D6660 /* ArtPiecesView.swift */,
 				A742B3EF2CAAC686001D6660 /* ArtPieceDetailView.swift */,
+				A742B3FD2CAC09B1001D6660 /* FavoritesView.swift */,
+				A742B3FF2CAD3029001D6660 /* ArtPieceListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -70,7 +85,9 @@
 		A742B3F22CAADFCA001D6660 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				A742B3F32CAADFD5001D6660 /* Repository.swift */,
+				A742B3F32CAADFD5001D6660 /* ArtRemoteRepository.swift */,
+				A742B4032CAD6063001D6660 /* ArtRepository.swift */,
+				A742B4052CAD7341001D6660 /* ArtMockRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -102,6 +119,7 @@
 				CE75F2722C8B1501001AD0A3 /* ContentView.swift */,
 				CE75F2742C8B1502001AD0A3 /* Assets.xcassets */,
 				CE75F2762C8B1502001AD0A3 /* Preview Content */,
+				A742B4012CAD58FF001D6660 /* Utils.swift */,
 			);
 			path = Kunstmuseum;
 			sourceTree = "<group>";
@@ -184,13 +202,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A742B3F42CAADFD5001D6660 /* Repository.swift in Sources */,
+				A742B3F42CAADFD5001D6660 /* ArtRemoteRepository.swift in Sources */,
+				A742B4062CAD7341001D6660 /* ArtMockRepository.swift in Sources */,
+				A742B4042CAD6063001D6660 /* ArtRepository.swift in Sources */,
 				A742B3EC2CAABE48001D6660 /* ArtViewModel.swift in Sources */,
+				A742B3FC2CAC050A001D6660 /* FavoritesViewModel.swift in Sources */,
 				A742B3EA2CAAB4B0001D6660 /* ArtPiece.swift in Sources */,
 				CE75F2732C8B1501001AD0A3 /* ContentView.swift in Sources */,
+				A742B4002CAD3029001D6660 /* ArtPieceListItemView.swift in Sources */,
 				CE75F2712C8B1501001AD0A3 /* KunstmuseumApp.swift in Sources */,
+				A742B4022CAD58FF001D6660 /* Utils.swift in Sources */,
 				A742B3F02CAAC686001D6660 /* ArtPieceDetailView.swift in Sources */,
 				A742B3EE2CAAC25E001D6660 /* ArtPiecesView.swift in Sources */,
+				A742B3FE2CAC09B1001D6660 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

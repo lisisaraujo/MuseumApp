@@ -10,9 +10,12 @@ import SwiftUI
 @MainActor
 class ArtViewModel: ObservableObject {
     
+    private let repository: ArtRepository
     @Published var artPieces: [ArtPiece] = []
     
-    private let repository = Repository()
+    init(repository: ArtRepository) { 
+        self.repository = repository
+    }
     
     func getListOfArtPieces(searchTerm: String) async throws -> [ArtPiece] {
         let artPiecesIds = try await repository.getArtpiecesIds(searchTerm: searchTerm).objectIDs
@@ -28,4 +31,5 @@ class ArtViewModel: ObservableObject {
         
         return artPieces
     }
+    
 }

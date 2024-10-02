@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Repository {
+class ArtRemoteRepository: ArtRepository {
     
     enum HTTPError: Error {
         case invalidURL, fetchFailed
